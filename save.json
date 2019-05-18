@@ -1,0 +1,61 @@
+{
+  "created": 1550477201162,
+  "collection": 
+    [
+      {
+        "width": 23,
+        "x": 12,
+        "name": "брежневка",
+        "y": 13,
+        "height": 12,
+        "shelf": 
+          [
+
+          ]
+      },
+      {
+        "width": 6,
+        "x": 11,
+        "name": "хрущевка",
+        "y": 11,
+        "height": 12,
+        "shelf": 
+          [
+            {
+              "size": 2,
+              "name": "flower"
+            },
+            {
+              "size": 1,
+              "name": "hat"
+            },
+            {
+              "size": 1,
+              "name": "scissors"
+            }
+          ]
+      },
+      {
+        "width": 5,
+        "x": 10,
+        "name": "хрущевка",
+        "y": 12,
+        "height": 10,
+        "shelf": 
+          [
+            {
+              "size": 1,
+              "name": "flower"
+            },
+            {
+              "size": 1,
+              "name": "hat"
+            },
+            {
+              "size": 1,
+              "name": "flower"
+            }
+          ]
+      }
+    ]
+}

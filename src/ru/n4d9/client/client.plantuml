@@ -1,0 +1,148 @@
+@startuml
+
+title __CLIENT's Class Diagram__\n
+
+  package  {
+    package ifmo.programming.lab6 {
+      package ifmo.programming.lab6.client {
+        class Client {
+            {static} + main()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package ifmo.programming.lab6 {
+      package ifmo.programming.lab6.client {
+        class ClientSettings {
+            {static} + address : String
+            {static} + portClientServer : int
+            {static} + portServerClient : int
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package ifmo.programming.lab6 {
+      package ifmo.programming.lab6.client {
+        class Room {
+            - name : String
+            - height : int
+            - width : int
+            - depth : int
+            - x : int
+            - y : int
+            - creationDate : Date
+            - shelf : ArrayList<Thing>
+            - size : int
+            ~ Room(int, int, int, int)
+            ~ Room(int, int, int, int, String)
+            + Room(int, int, int, int, String, Thing...)
+            + getShelf(): ArrayList<Thing>
+            + setBounds(int, int, int, int): void
+            + setPosition(int, int): void
+            + setSize(int, int): void
+            + getX(): int
+            + getY(): int
+            + setX(int): void
+            + setY(int): void
+            + getDepth(): int
+            + getWidth(): int
+            + getHeight(): int
+            + setWidth(int): void
+            + setHeight(int): void
+            + getName():String
+            + setName(String): void
+            + compareTo(Room): int
+            + toString():String
+            + equals(Object): boolean
+            + hashCode(): int
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package ifmo.programming.lab6 {
+      package ifmo.programming.lab6.client {
+        class Thing {
+            - size : int
+            - name : String
+            + Thing(String)
+            + Thing(int, String)
+            + setSize(int): void
+            + getSize(): int
+            + getName(): String
+            + setName(int): void
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package ifmo.programming.lab6 {
+      package ifmo.programming.lab6.client {
+        class RoomFactory {
+            {static} ~ makeRoomFromJSON(String): Room
+            {static} ~ makeRoomsFromJSON(String): Room[]
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package ifmo.programming.lab6 {
+      package ifmo.programming.lab6.client {
+        class UserCommandProcessor {
+            {static} - port1 : int
+            {static} - port2 : int
+            - address : InetAddress
+            + UserCommandProcessor(InetAddress, int, int)
+            ~ processCommand(String, String, OutputStream): void
+            - doWithRoomArgument(String, String, OutputStream): void
+            - doImport(String, String, OutputStream): void
+            - doWithFilenameArgument(String, String, OutputStream): void
+            - send(Message): void
+            ~ receiveAnswer(): Message
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package ifmo.programming.lab6 {
+      package ifmo.programming.lab6.client {
+        class UserCommandReader {
+            - inputStream : InputStream
+            - outputStream : OutputStream
+            ~ UserCommandReader(InputStream, OutputStream, UserCommandProcessor)
+            ~ startReading(): void
+            - getNextCommand(): String
+            ~ startUsage(): void
+        }
+      }
+    }
+  }
+  
+
+  Room -up-|> Comparable
+  Room -up-|> Serializable
+  Room +-down- Thing
+  Thing -up-|> Serializable
+  UserCommandProcessor o-- Receiver : receiver
+  UserCommandReader o-- UserCommandProcessor : processor
+
+
+right footer
+
+endfooter
+
+@enduml
