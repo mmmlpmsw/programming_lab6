@@ -14,10 +14,10 @@ import java.nio.file.AccessDeniedException;
 
 class Resolver implements Runnable{
 
-    static Building building;
-    Message message;
-    int requestID;
-    static InetAddress address;
+    private static Building building;
+    private Message message;
+    private int requestID;
+    private static InetAddress address;
 
     Resolver(Message message, int requestID, InetAddress address, Building building){
         this.address = address;

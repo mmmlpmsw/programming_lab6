@@ -1,14 +1,14 @@
 package ifmo.programming.lab6.client;
 
 
+import ifmo.programming.lab6.transmitter.ReceiverListener;
+import ifmo.programming.lab6.Message;
 import ifmo.programming.lab6.Utils.StringEntity;
 import ifmo.programming.lab6.json.JSONParseException;
 import ifmo.programming.lab6.server.FileLoader;
 import ifmo.programming.lab6.transmitter.Receiver;
-import ifmo.programming.lab6.transmitter.ReceiverListener;
 import ifmo.programming.lab6.transmitter.Sender;
 import ifmo.programming.lab6.transmitter.SenderAdapter;
-import ifmo.programming.lab6.Message;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -50,6 +50,9 @@ public class CommandReader {
 
                 System.out.print("Введите команду >>> ");
             }
+            processCommand("autosave", null);
+            System.exit(0); //todo try to fix
+            //todo try to fix  if ((command = getNextCommand()) == null) System.exit(0);
         }catch (IOException e) {
             System.out.println("Ошибка ввода.");
         }
@@ -113,13 +116,13 @@ public class CommandReader {
      */
     private void doWithRoomArgument(String name, String arg) {
         /*try {*/
-            Message message = new Message(name, null);
-            if (arg != null)
-                try {
-                    message.setAttachment(RoomFactory.makeRoomFromJSON(arg));
-                } catch (JSONParseException | IllegalArgumentException e) {
-                    System.out.println( e.getMessage());}
-            send(message);
+        Message message = new Message(name, null);
+        if (arg != null)
+            try {
+                message.setAttachment(RoomFactory.makeRoomFromJSON(arg));
+            } catch (JSONParseException | IllegalArgumentException e) {
+                System.out.println( e.getMessage());}
+        send(message);
         /*} catch (IOException e) {e.getMessage();}*/
     }
 
@@ -129,10 +132,10 @@ public class CommandReader {
      * @param filename аргумент команды - название файла
      */
     private void doWithFilenameArgument(String name, String filename) {
-       /* try {*/
-            Message message = new Message(name, new StringEntity().set(filename));
-            send(message);
-       /* } catch (IOException e) { e.getMessage(); }*/
+        /* try {*/
+        Message message = new Message(name, new StringEntity().set(filename));
+        send(message);
+        /* } catch (IOException e) { e.getMessage(); }*/
     }
 
     private void send(Message message){
