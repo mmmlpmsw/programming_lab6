@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2ede128-258c-4abd-a700-1a83c7d0d721" name="Default Changelist" comment="" />
+    <list default="true" id="b2ede128-258c-4abd-a700-1a83c7d0d721" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/CommandReader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/CommandReader$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/CommandReader$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/CommandReader$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/CommandReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/client/CommandReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Building.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Building.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/BuildingChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/BuildingChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Resolver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Resolver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Resolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Resolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Server$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Server$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Server$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuperPooperUDeePee/ru/n4d9/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/n4d9/server/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/n4d9/server/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/n4d9/server/BuildingChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/n4d9/server/BuildingChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/n4d9/server/FileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/n4d9/server/FileLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/n4d9/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/n4d9/server/Server.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,52 +40,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java">
+        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="165" selection-start-line="165" selection-end-line="173" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7302#7503#0" expanded="true" />
-                <element signature="e#7502#7503#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2176" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
+            <state relative-caret-position="697">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="366">
+              <caret line="216" selection-start-line="19" selection-end-line="216" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1819">
+              <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7610#7811#0" expanded="true" />
+                <element signature="e#7810#7811#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/BuildingChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2142">
+              <caret line="126" column="47" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,6 +98,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -90,37 +111,45 @@
         <option value="$PROJECT_DIR$/src/ru/n4d9/Commadn.java" />
         <option value="$PROJECT_DIR$/src/ru/n4d9/Command.java" />
         <option value="$PROJECT_DIR$/src/ru/n4d9/client/Room.java" />
-        <option value="$PROJECT_DIR$/src/ru/n4d9/server/BuildingChecker.java" />
         <option value="$PROJECT_DIR$/src/ru/n4d9/Utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/ru/n4d9/server/RequestHandler.java" />
         <option value="$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java" />
-        <option value="$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java" />
         <option value="$PROJECT_DIR$/build.sh" />
-        <option value="$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java" />
-        <option value="$PROJECT_DIR$/src/ru/n4d9/server/Server.java" />
         <option value="$PROJECT_DIR$/src/ru/n4d9/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/ru/n4d9/server/Building.java" />
         <option value="$PROJECT_DIR$/src/ru/n4d9/client/Client.java" />
+        <option value="$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java" />
+        <option value="$PROJECT_DIR$/src/ru/n4d9/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java" />
+        <option value="$PROJECT_DIR$/src/ru/n4d9/server/Building.java" />
+        <option value="$PROJECT_DIR$/src/ru/n4d9/server/BuildingChecker.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="445" />
-    <option name="y" value="145" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
     <option name="width" value="1095" />
     <option name="height" value="705" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SuperPooperUDeePee" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperPooperUDeePee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SuperPooperUDeePee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SuperPooperUDeePee" type="462c0819:PsiDirectoryNode" />
+              <item name="manifests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SuperPooperUDeePee" type="b2602c69:ProjectViewProjectNode" />
@@ -145,27 +174,24 @@
               <item name="SuperPooperUDeePee" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="n4d9" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SuperPooperUDeePee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SuperPooperUDeePee" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="n4d9" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ru/n4d9" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -173,19 +199,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee" />
-      <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee\src\ru\n4d9" />
-      <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee\src\ru\n4d9\server" />
-      <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee\src\ru\n4d9\client" />
+      <recent name="D:\java projects\SuperPooperUDeePee\src\ru\n4d9\transmitter" />
       <recent name="D:\java projects\SuperPooperUDeePee\src\ru\n4d9" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.n4d9" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee\src\ru\n4d9" />
       <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee" />
-      <recent name="D:\java projects\SuperPooperUDeePee\src\ru\n4d9\transmitter" />
+      <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee\src\ru\n4d9\server" />
+      <recent name="C:\Users\Nadya\Desktop\SuperPooperUDeePee\src\ru\n4d9\client" />
       <recent name="D:\java projects\SuperPooperUDeePee\src\ru\n4d9" />
     </key>
   </component>
@@ -203,7 +229,7 @@
   </component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.n4d9.client.Client" />
+      <option name="MAIN_CLASS_NAME" value="ifmo.programming.lab6.client.Client" />
       <module name="SuperPooperUDeePee" />
       <extension name="coverage">
         <pattern>
@@ -215,8 +241,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.n4d9.server.Server" />
+    <configuration name="Server" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ifmo.programming.lab6.server.Server" />
       <module name="SuperPooperUDeePee" />
       <extension name="coverage">
         <pattern>
@@ -228,10 +254,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -251,17 +280,18 @@
       <workItem from="1558129542890" duration="6590000" />
       <workItem from="1558137979148" duration="716000" />
       <workItem from="1558140843072" duration="2179000" />
+      <workItem from="1558210867443" duration="832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14585000" />
+    <option name="totallyTimeSpent" value="16190000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85269123" visible="true" weight="0.26778522" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85269123" visible="true" weight="0.2758389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -271,7 +301,7 @@
       <window_info id="Favorites" order="7" sideWeight="0.14730878" side_tool="true" weight="0.26040268" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.305949" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3654391" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,6 +313,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info active="true" anchor="right" id="Remote Host" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -303,45 +334,105 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
-          <line>138</line>
+          <line>139</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
-          <line>139</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
-          <line>142</line>
+          <line>143</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
-          <line>143</line>
+          <line>144</line>
           <properties />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -393,13 +484,6 @@
     <entry file="file://$PROJECT_DIR$/src/ru/n4d9/json/JSONObject.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/BuildingChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1139">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/n4d9/Utils/StringEntity.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -427,26 +511,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../programming_l6_new_UDP/src/ifmo/programming/lab6/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3618" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../programming_l6_new_UDP/src/ifmo/programming/lab6/server/Server.java" />
     <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/FileLoader.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/client.plantuml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imp.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -470,35 +540,6 @@
         <state relative-caret-position="-2176" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="165" selection-start-line="165" selection-end-line="173" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7302#7503#0" expanded="true" />
-            <element signature="e#7502#7503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/n4d9/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -508,16 +549,6 @@
             <element signature="e#436#437#0" expanded="true" />
             <element signature="e#471#472#0" expanded="true" />
             <element signature="e#502#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Building.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -532,10 +563,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Building.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="149" column="22" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="697">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/Resolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7610#7811#0" expanded="true" />
+            <element signature="e#7810#7811#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/server/BuildingChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="126" column="47" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/RoomFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-471">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/n4d9/client/CommandReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="216" selection-start-line="19" selection-end-line="216" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
