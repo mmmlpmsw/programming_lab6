@@ -13,6 +13,7 @@ import java.net.InetAddress;
 
 public class Server {
     private static final int RECEIVING_PORT = 2222;
+    static Building building = new Building();
 
     public static void main(String[] args) {
         try {
@@ -33,7 +34,7 @@ public class Server {
             String text = message.getText();
             System.out.println("Пришёл запрос: " + text);
 
-            new Thread(new Resolver(message, requestID, address)).start();
+            new Thread(new Resolver(message, requestID, address, building)).start();
             /*Message response = Resolver.resolve(message, requestID);
 
             respond(response.serialize(), message.getSourcePort(), address);*/

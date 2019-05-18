@@ -1,7 +1,5 @@
 package ifmo.programming.lab6.client;
 
-
-
 import ifmo.programming.lab6.json.*;
 
 

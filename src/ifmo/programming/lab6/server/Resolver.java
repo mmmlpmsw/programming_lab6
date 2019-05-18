@@ -14,15 +14,16 @@ import java.nio.file.AccessDeniedException;
 
 class Resolver implements Runnable{
 
-    static Building building = new Building();
+    static Building building;
     Message message;
     int requestID;
     static InetAddress address;
 
-    Resolver(Message message, int requestID, InetAddress address){
+    Resolver(Message message, int requestID, InetAddress address, Building building){
         this.address = address;
         this.message = message;
         this.requestID = requestID;
+        this.building = building;
     }
 
     @Override
