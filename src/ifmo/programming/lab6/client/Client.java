@@ -5,6 +5,7 @@ import ifmo.programming.lab6.transmitter.Receiver;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Client {

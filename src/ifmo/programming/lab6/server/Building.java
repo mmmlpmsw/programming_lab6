@@ -1,8 +1,5 @@
 package ifmo.programming.lab6.server;
 
-
-
-
 import ifmo.programming.lab6.Utilities;
 import ifmo.programming.lab6.client.Room;
 
@@ -14,7 +11,6 @@ import java.util.concurrent.LinkedBlockingDeque;
  * Хрущёвка
  */
 public class Building {
-    private static final String FILENAME_ENV = "loadfile";
     private LinkedBlockingDeque<Room> collection = new LinkedBlockingDeque <>();
     private Date creationDate = new Date();
     private boolean hasChanged = false;
@@ -37,8 +33,10 @@ public class Building {
     public boolean remove(Room room) {
         if (!(collection.contains(room)))
             return false;
-        collection.remove(room);
-        hasChanged = true;
+        else {
+            collection.remove(room);
+            hasChanged = true;
+        }
         return true;
 
     }
@@ -90,10 +88,11 @@ public class Building {
      */
     public String getStringCollection(){
         StringBuilder builder = new StringBuilder("");
-        for (Room room : collection) {
+        /*for (Room room : collection) {
             builder.append(room.toString());
             builder.append("\n");
-        }
+        }*/
+        collection.forEach(room -> builder.append(room.toString() + "\n"));
         return builder.toString();
     }
 
@@ -106,8 +105,9 @@ public class Building {
     /**
      * @return int - размер коллекции
      */
-    public int getSize() {
-        return collection.size();
+    public long getSize() {
+//        return collection.size();
+        return collection.stream().count();
     }
 
     public Date getCreationDate() {
@@ -137,9 +137,10 @@ public class Building {
      * @return читабельное строковое представление коллекции
      */
     public String getCollectionInfo() {
+        long size = collection.stream().count();
         return  "Коллекция типа " + collection.getClass().getName() + ",\n" +
                 "дата создания: " + creationDate + ",\n" +
-                "содержит " + collection.size() + " элементов";
+                "содержит " + /*collection.size()*/ size + " элементов";
     }
 
     /**
@@ -149,19 +150,17 @@ public class Building {
     public String getHelp() {
         return  Utilities.colorize("[[RED]]Оу, похоже, вам нужна помощь?" +
                 "\nПриложение поддерживает выполнение следующих команд:[[RED]]" +
-                "[[YELLOW]]\n\t• add {element}: добавить новый элемент в коллекцию; пример комнаты, которую можно добавить:" +
-                "{\"x\": 10, \"y\": 12, \"width\": 5, \"name\": \"хрущевка\", \"height\": 10," +
-                " \n\t\"shelf\": [ { \"size\": 1, \"name\": \"flower\" }, { \"size\": 1, \"name\": \"hat\" } ] } [[YELLOW]]" +
-                "[[BRIGHT_YELLOW]]\n\t• remove_first: удалить первый элемент из коллекции;" +
-                "\n\t• remove_greater {element}: удалить из коллекции все элементы, превышающие заданный;[[BRIGHT_YELLOW]]" +
-                "[[BRIGHT_GREEN]]\n\t• show: вывести в стандартный поток вывода все элементы коллекции в строковом представлении;" +
-                "\n\t• info: вывести в стандартный поток вывода информацию о коллекции;[[BRIGHT_GREEN]]" +
-                "[[CYAN]]\n\t• load: перечитать коллекцию из файла;" +
-                "\n\t• remove {element}: удалить элемент из коллекции по его значению;[[CYAN]]" +
-                "[[BLUE]]\n\t• import: добавить данные из файла клиента в коллекцию;" +
-                "\n\t• save: сохранить состояние коллекции в файл сервера;[[BLUE]]" +
-                "[[PURPLE]]\n\t• address {адрес}: установить новый адрес {адрес}; если поле {адрес} - пустое, то показать текущий адрес;" +
-                "\n\t• port {порт}: установить новый порт {порт}; если поле {порт} - пустое, то показать текущий порт; [[PURPLE]]" +
+                "[[YELLOW]]\n\t• add {element}: добавить новый элемент в коллекцию; пример комнаты, которую можно добавить:[[YELLOW]]" +
+                "[[BRIGHT_YELLOW]]{\"x\": 10, \"y\": 12, \"width\": 5, \"name\": \"хрущевка\", \"height\": 10," +
+                " \n\t\"shelf\": [ { \"size\": 1, \"name\": \"flower\" }, { \"size\": 1, \"name\": \"hat\" } ] } [[BRIGHT_YELLOW]]" +
+                "[[BRIGHT_GREEN]]\n\t• remove_first: удалить первый элемент из коллекции;" +
+                "\n\t• remove_greater {element}: удалить из коллекции все элементы, превышающие заданный;[[BRIGHT_GREEN]]" +
+                "[[CYAN]]\n\t• show: вывести в стандартный поток вывода все элементы коллекции в строковом представлении;" +
+                "\n\t• info: вывести в стандартный поток вывода информацию о коллекции;[[CYAN]]" +
+                "[[BLUE]]\n\t• load: перечитать коллекцию из файла;" +
+                "\n\t• remove {element}: удалить элемент из коллекции по его значению;[[BLUE]]" +
+                "[[PURPLE]]\n\t• import: добавить данные из файла клиента в коллекцию;" +
+                "\n\t• save: сохранить состояние коллекции в файл сервера;[[PURPLE]]" +
                 "[[RESET]]\n\t• help: вызов справки.[[RESET]]");
 
     }
