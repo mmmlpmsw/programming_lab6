@@ -37,6 +37,7 @@ class Resolver implements Runnable{
     static Message resolve(Message message, int requestID) {
 
         switch (message.getText()) {
+
             case "help":
                 return m(building.getHelp());
 
@@ -44,7 +45,7 @@ class Resolver implements Runnable{
                 return m(building.getCollectionInfo());
 
             case "show":
-		if (building.getSize() == 0) return m("Коллекция пуста.");
+		        if (building.getSize() == 0) return m("Коллекция пуста.");
                 return m(building.getStringCollection());
 
             case "save":
@@ -75,6 +76,7 @@ class Resolver implements Runnable{
                        return m("Клиент отправил запрос в неверном формате : аргумент сообщения должен быть строкой.");
                     }
                     BuildingChecker.getCollectionFromJSON(building, FileLoader.getFileContent(((StringEntity) message.getAttachment()).getString()));
+                    savestate(building);
                     return m("Загрузка успешна. В коллекции " + building.getSize() + " комнат.");
                 } catch (AccessDeniedException e) {
                     return m("Ошибка: нет доступа для чтения.");
@@ -97,6 +99,7 @@ class Resolver implements Runnable{
                     synchronized (building) {
                         BuildingChecker.getCollectionFromJSON(building, ((StringEntity) message.getAttachment()).getString());
                     }
+                    savestate(building);
                     return m("Загрузка успешна. В коллекции " + building.getSize() + " комнат.");
                 } catch (Exception e) {
                 }
@@ -107,6 +110,7 @@ class Resolver implements Runnable{
                     if (building.getSize() == 0) {
                         return m("Невозможно удалить комнату: коллекция пуста.");
                     }
+                    savestate(building);
                     return m("Удалена комната: " + building.removeFirst().toString());
                 }
 
@@ -119,8 +123,11 @@ class Resolver implements Runnable{
                        return m("Клиент отправил данные в неверном формате : аргумент должен быть сериализованным объектом.");
                     }
                     synchronized (building) {
-                        return m("Удалено " + building.removeGreater((Room) message.getAttachment()) + " комнат.");
+                        int rooms = building.removeGreater((Room) message.getAttachment());
+                        savestate(building);
+                        return m("Удалено " + rooms + " комнат.");
                     }
+
                 } catch (Exception e) {
                     return m(e.getMessage());
                 }
@@ -136,9 +143,10 @@ class Resolver implements Runnable{
                     Room room = (Room) message.getAttachment();
                     synchronized (building) {
                         boolean removed = building.remove(room);
-                        if (removed)
+                        if (removed) {
+                            savestate(building);
                             return m("Комната удалена.");
-                        else
+                        } else
                             return m("Ошибка: такой комнаты нет в коллекции.");
                     }
                 } catch (Exception e) {
@@ -158,6 +166,7 @@ class Resolver implements Runnable{
                     synchronized (building) {
                         building.add((Room) message.getAttachment());
                     }
+                    savestate(building);
                     return m("Комната " + room.getName() + " добавлена в коллекцию");
                 } catch (Exception e) {
                     return m("Не получилось создать комнату: " + e.getMessage());
@@ -165,10 +174,6 @@ class Resolver implements Runnable{
 
             case "requestid":
                 return m("Ваш request id: " + requestID);
-
-            case "autosave":
-                saveAfterPressKey(building);
-                return m("Сохранение успешно");
 
             default:
                 return m("Не знаю такой команды");
@@ -203,25 +208,20 @@ class Resolver implements Runnable{
         return m(text, null);
     }
 
-
-    private static void saveAfterPressKey(Building building) {
-        Runnable saveCode = new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    if (building.isChanged()) {
-                        System.out.println("\nСохраняю...");
-                        BuildingChecker.saveCollection(building, new BufferedWriter(new FileWriter(FILE_FOR_AUTOSAVE)));
-                        System.out.println("Сохранено");
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+    private static void savestate(Building building) {
+            try {
+                System.out.println("\nСохраняю...");
+                BuildingChecker.saveCollection(building, new BufferedWriter(new FileWriter(FILE_FOR_AUTOSAVE)));
+                System.out.println("Сохранено");
+            } catch (NullPointerException e) {
+                //System.out.println("Не могу осуществить сохранение: не указано имя файла.");
+            } catch (AccessDeniedException e) {
+                //System.out.println("Нет доступа к файлу");
+            } catch (FileNotFoundException e) {
+                //System.out.println("Ошибка: файл не найден.");
+            }catch (IOException e) {
+                //return m("Ошибка чтения/записи.");
             }
-        };
-        Thread savingThread = new Thread(saveCode);
-        Runtime.getRuntime().addShutdownHook(savingThread);
+
     }
-
-
 }

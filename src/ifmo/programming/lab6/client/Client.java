@@ -25,7 +25,7 @@ public class Client {
         try {
             port = Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException e) {
-            System.err.println("Порт должен быть целым числом от 0 до 65535, клиент будет отключен.");
+            System.err.println("Порт должен быть целым числом от 1 до 65535, клиент будет отключен.");
             System.exit(-1);
         }
         try {

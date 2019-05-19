@@ -19,7 +19,7 @@ import java.nio.file.AccessDeniedException;
 
 public class CommandReader {
 
-    private static final int SENDING_PORT = 2222;
+    private static final int SENDING_PORT = 2227;
     private int port;
     private Receiver receiver;
 
@@ -62,7 +62,8 @@ public class CommandReader {
 
         switch (name){
 
-            case "exit": System.exit(0);
+            case "exit":
+                System.exit(0);
             case "import":
                 doImport(name, arg);
                 return;

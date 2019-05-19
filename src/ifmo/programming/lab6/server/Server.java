@@ -16,7 +16,7 @@ import java.util.Map;
 import static ifmo.programming.lab6.server.BuildingChecker.getCollectionFromJSON;
 
 public class Server {
-    private static final int RECEIVING_PORT = 2222;
+    private static final int RECEIVING_PORT = 2227;
     static Building building = new Building();
     private static final String FILENAME_ENV = "LOADFILE";
 
