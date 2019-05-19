@@ -7,7 +7,6 @@ import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
-
 public class Client {
 
     private static Scanner scanner;

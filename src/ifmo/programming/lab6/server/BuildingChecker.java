@@ -4,6 +4,7 @@ package ifmo.programming.lab6.server;
 import ifmo.programming.lab6.client.Room;
 import ifmo.programming.lab6.json.*;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
@@ -119,6 +120,42 @@ class BuildingChecker {
 
             roomObject.putItem("name", new JSONString(room.getName()));
             //     roomObject.putItem("length", room.getLength());
+
+            JSONArray array = new JSONArray();
+            for (Room.Thing thing : room.getShelf()) {
+                JSONObject object = new JSONObject();
+                object.putItem("size", thing.getSize());
+                object.putItem("name", new JSONString(thing.getName()));
+                array.addItem(object);
+            }
+            roomObject.putItem("shelf", array);
+
+            collection.addItem(roomObject);
+        }
+
+        result.putItem("collection", collection);
+        writer.write(result.toFormattedString());
+        writer.flush();
+        building.setChange(false);
+    }
+
+    static void saveCollection(Building building, BufferedWriter writer) throws IOException {
+        JSONObject result = new JSONObject();
+        result.putItem("created", building.getCreationDate().getTime());
+        result.putItem("created", building.getCreationDate().getTime());
+        JSONArray collection = new JSONArray();
+
+        for (Room room : building.getCollection()) {
+            JSONObject roomObject = new JSONObject();
+            //if (!room.getWallcolor().isEmpty()) { roomObject.putItem("wallcolor", new JSONString(room.getWallcolor())); }
+
+            roomObject.putItem("width", room.getWidth());
+            roomObject.putItem("height", room.getHeight());
+
+            roomObject.putItem("x", room.getX());
+            roomObject.putItem("y", room.getY());
+
+            roomObject.putItem("name", new JSONString(room.getName()));
 
             JSONArray array = new JSONArray();
             for (Room.Thing thing : room.getShelf()) {

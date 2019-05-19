@@ -19,7 +19,7 @@ public class Server {
     private static final int RECEIVING_PORT = 2222;
     static Building building = new Building();
     private static final String FILENAME_ENV = "LOADFILE";
-    private static final String FILE_FOR_AUTOSAVE = "autosave.json";
+
 
     public static void main(String[] args) {
 

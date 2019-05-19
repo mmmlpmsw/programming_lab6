@@ -18,6 +18,7 @@ class Resolver implements Runnable{
     private Message message;
     private int requestID;
     private static InetAddress address;
+    private static final String FILE_FOR_AUTOSAVE = "autosave.json";
 
     Resolver(Message message, int requestID, InetAddress address, Building building){
         this.address = address;
@@ -165,8 +166,12 @@ class Resolver implements Runnable{
             case "requestid":
                 return m("Ваш request id: " + requestID);
 
-                default:
-                    return m("Не знаю такой команды");
+            case "autosave":
+                saveAfterPressKey(building);
+                return m("Сохранение успешно");
+
+            default:
+                return m("Не знаю такой команды");
         }
     }
 
@@ -196,6 +201,26 @@ class Resolver implements Runnable{
 
     private static Message m(String text) {
         return m(text, null);
+    }
+
+
+    private static void saveAfterPressKey(Building building) {
+        Runnable saveCode = new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    if (building.isChanged()) {
+                        System.out.println("\nСохраняю...");
+                        BuildingChecker.saveCollection(building, new BufferedWriter(new FileWriter(FILE_FOR_AUTOSAVE)));
+                        System.out.println("Сохранено");
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        Thread savingThread = new Thread(saveCode);
+        Runtime.getRuntime().addShutdownHook(savingThread);
     }
 
 

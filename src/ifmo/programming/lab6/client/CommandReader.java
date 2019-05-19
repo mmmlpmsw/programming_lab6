@@ -50,9 +50,8 @@ public class CommandReader {
 
                 System.out.print("Введите команду >>> ");
             }
-            processCommand("autosave", null);
+            //processCommand("autosave", null);
             System.exit(0); //todo try to fix
-            //todo try to fix  if ((command = getNextCommand()) == null) System.exit(0);
         }catch (IOException e) {
             System.out.println("Ошибка ввода.");
         }
