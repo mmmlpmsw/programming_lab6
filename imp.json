@@ -43,7 +43,29 @@
           "name": "scissors"
         }
       ]
+    },
+    {
+      "x": 11,
+      "y": 11,
+      "width": 6,
+      "name": "сталинка",
+      "height": 12,
+      "shelf": [
+        {
+          "size": 2,
+          "name": "flower"
+        },
+        {
+          "size": 1,
+          "name": "hat"
+        },
+        {
+          "size": 1,
+          "name": "scissors"
+        }
+      ]
     }
+
 
   ]
 }

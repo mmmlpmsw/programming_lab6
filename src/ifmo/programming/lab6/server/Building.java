@@ -1,8 +1,10 @@
 package ifmo.programming.lab6.server;
 
-import ifmo.programming.lab6.Utilities;
+import ifmo.programming.lab6.Utils.Utilities;
 import ifmo.programming.lab6.client.Room;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.concurrent.LinkedBlockingDeque;
 
@@ -60,7 +62,11 @@ public class Building {
      * @return удалённый элемент (вернет null, если коллекция пуста)
      */
     public Room removeFirst() {
-        /*Stack*/LinkedBlockingDeque<Room> snew = new /*Stack*/LinkedBlockingDeque<>();
+
+//        collection.getFirst();
+        return collection.removeFirst();
+
+/*        LinkedBlockingDeque<Room> snew = new LinkedBlockingDeque<>();
         while(collection.size() > 1)
             snew.push(collection.pop());
 
@@ -72,7 +78,7 @@ public class Building {
             hasChanged = true;
             return removed;
         }
-        return null;
+        return null;*/
     }
 
     /**
@@ -92,6 +98,7 @@ public class Building {
             builder.append(room.toString());
             builder.append("\n");
         }*/
+
         collection.forEach(room -> builder.append(room.toString() + "\n"));
         return builder.toString();
     }
@@ -163,6 +170,25 @@ public class Building {
                 "\n\t• save: сохранить состояние коллекции в файл сервера;[[PURPLE]]" +
                 "[[RESET]]\n\t• help: вызов справки.[[RESET]]");
 
+    }
+
+    public Building sortCollection(){
+        Room[] rooms = new Room[collection.size()];
+        int i = 0;
+        boolean flag = false;
+        int size = collection.size();
+        for (Room room : collection) {
+            rooms[i] = room;
+            i ++;
+        }
+        Arrays.sort(rooms);
+
+        Building sortBuilding = new Building();
+        for (int j = size - 1; j >=0; j -- ) {
+            sortBuilding.add(rooms[j]);
+        }
+
+        return sortBuilding;
     }
 
     /**

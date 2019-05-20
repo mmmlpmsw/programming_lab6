@@ -40,7 +40,6 @@ class BuildingChecker {
                 JSONObject roomObject = room.toObject(new IllegalArgumentException("Элементы collection должны быть объектами"));
                 int width = roomObject.getItem("width").toInt(new IllegalArgumentException("Поле width элементов коллекции должно быть числом") ),
                         height = roomObject.getItem("height").toInt(new IllegalArgumentException("Поле height элементов коллекции должно быть числом, но это") );
-//                        length = roomObject.getItem("length").toInt(new IllegalArgumentException("Поле length элементов коллекции collection должно быть числом") );
 
                 int x = roomObject.getItem("x").toInt(new IllegalArgumentException("Координата x элементов коллекции должна быть числом") );
                 int y = roomObject.getItem("y").toInt(new IllegalArgumentException("Координата y элементов коллекции должна быть числом") );
@@ -110,7 +109,6 @@ class BuildingChecker {
 
         for (Room room : building.getCollection()) {
             JSONObject roomObject = new JSONObject();
-            //     if (!room.getWallcolor().isEmpty()) { roomObject.putItem("wallcolor", new JSONString(room.getWallcolor())); }
 
             roomObject.putItem("width", room.getWidth());
             roomObject.putItem("height", room.getHeight());
@@ -119,7 +117,6 @@ class BuildingChecker {
             roomObject.putItem("y", room.getY());
 
             roomObject.putItem("name", new JSONString(room.getName()));
-            //     roomObject.putItem("length", room.getLength());
 
             JSONArray array = new JSONArray();
             for (Room.Thing thing : room.getShelf()) {
@@ -147,7 +144,6 @@ class BuildingChecker {
 
         for (Room room : building.getCollection()) {
             JSONObject roomObject = new JSONObject();
-            //if (!room.getWallcolor().isEmpty()) { roomObject.putItem("wallcolor", new JSONString(room.getWallcolor())); }
 
             roomObject.putItem("width", room.getWidth());
             roomObject.putItem("height", room.getHeight());

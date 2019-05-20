@@ -28,7 +28,6 @@ public class CommandReader {
         this.receiver = receiver;
     }
 
-    // TODO: Нормально назвать функцию
     void IMMA_CHARGIN_MAH_LAZER() {
         System.out.print("Введите команду >>> ");
         String command;
@@ -50,8 +49,7 @@ public class CommandReader {
 
                 System.out.print("Введите команду >>> ");
             }
-            //processCommand("autosave", null);
-            System.exit(0); //todo try to fix
+            System.exit(0);
         }catch (IOException e) {
             System.out.println("Ошибка ввода.");
         }
@@ -115,7 +113,6 @@ public class CommandReader {
      * @param arg аргумент команды
      */
     private void doWithRoomArgument(String name, String arg) {
-        /*try {*/
         Message message = new Message(name, null);
         if (arg != null)
             try {
@@ -123,7 +120,6 @@ public class CommandReader {
             } catch (JSONParseException | IllegalArgumentException e) {
                 System.out.println( e.getMessage());}
         send(message);
-        /*} catch (IOException e) {e.getMessage();}*/
     }
 
     /**
@@ -132,10 +128,8 @@ public class CommandReader {
      * @param filename аргумент команды - название файла
      */
     private void doWithFilenameArgument(String name, String filename) {
-        /* try {*/
         Message message = new Message(name, new StringEntity().set(filename));
         send(message);
-        /* } catch (IOException e) { e.getMessage(); }*/
     }
 
     private void send(Message message){

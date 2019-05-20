@@ -63,9 +63,7 @@ public class Server {
             System.out.println("Пришёл запрос: " + text);
 
             new Thread(new Resolver(message, requestID, address, building)).start();
-            /*Message response = Resolver.resolve(message, requestID);
 
-            respond(response.serialize(), message.getSourcePort(), address);*/
         } catch (ClassNotFoundException | IOException e) {
             System.out.println("Не получилось обработать запрос: " + e.toString());
         }

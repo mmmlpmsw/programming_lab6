@@ -1,7 +1,4 @@
-package ifmo.programming.lab6;
-
-
-import ifmo.programming.lab6.Utils.Constants;
+package ifmo.programming.lab6.Utils;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;

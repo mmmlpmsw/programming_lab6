@@ -11,6 +11,8 @@ import java.io.*;
 import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.AccessDeniedException;
+import java.util.Arrays;
+import java.util.Collections;
 
 class Resolver implements Runnable{
 
@@ -46,7 +48,7 @@ class Resolver implements Runnable{
 
             case "show":
 		        if (building.getSize() == 0) return m("Коллекция пуста.");
-                return m(building.getStringCollection());
+                return m(building.sortCollection().getStringCollection());
 
             case "save":
 
@@ -107,11 +109,16 @@ class Resolver implements Runnable{
 
             case "remove_first":
                 synchronized (building) {
+
+
                     if (building.getSize() == 0) {
                         return m("Невозможно удалить комнату: коллекция пуста.");
                     }
                     savestate(building);
-                    return m("Удалена комната: " + building.removeFirst().toString());
+                    Building building1 = building.sortCollection();
+                    Room removing = building1.removeFirst();
+                    building.remove(removing);
+                    return m("Удалена комната: " + removing.toString());
                 }
 
             case "remove_greater":
@@ -210,9 +217,9 @@ class Resolver implements Runnable{
 
     private static void savestate(Building building) {
             try {
-                System.out.println("\nСохраняю...");
+                //System.out.println("\nСохраняю...");
                 BuildingChecker.saveCollection(building, new BufferedWriter(new FileWriter(FILE_FOR_AUTOSAVE)));
-                System.out.println("Сохранено");
+                //System.out.println("Сохранено");
             } catch (NullPointerException e) {
                 //System.out.println("Не могу осуществить сохранение: не указано имя файла.");
             } catch (AccessDeniedException e) {
